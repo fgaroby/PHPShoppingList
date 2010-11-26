@@ -1,0 +1,54 @@
+.table
+{
+	
+}
+
+th
+{
+	background-color : #e6e6cc;
+}
+
+th, td
+{
+	padding-left : 2px;
+	padding-right : 2px;
+}
+
+.pair
+{
+	background-color : #e6e6cc;
+}
+
+.impair
+{
+	background-color : #f3f3e9;
+}
+
+.pair td:first-child, .impair td:first-child
+{
+	padding-left : 20px;
+}
+
+.nodata
+{
+	font-style : italic;
+	color : red;
+	text-align : center;
+	background-color : #f3f3e9;
+}
+
+.tr-separator
+{
+	font-style : italic;
+}
+
+.tr-separator td
+{
+	padding-left : 10px;
+}
+
+.numeric
+{
+	text-align : right;
+}
+}

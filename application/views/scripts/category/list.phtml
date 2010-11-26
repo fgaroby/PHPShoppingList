@@ -1,0 +1,24 @@
+<h1><?php echo $this->pageTitle; ?></h1>
+
+<div><?php echo $this->sql; ?></div>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nom</th>
+			<th colspan="2">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+<?php
+$i = 0;
+foreach( $this->entries as $entry ) :
+//Zend_Debug::dump( $entry );
+?>
+	    <tr class="<?php echo ( $i % 2 == 0 ? 'impair' : 'pair' ); ?>">
+	    	<td><?php echo $this->escape( $entry->name ); ?></td>
+	    	<td><a href="<?php echo $this->link( 'product', 'edit', null, array( 'id' => $entry->id ) );?>">Éditer</a></td>
+	    	<td><a href="<?php echo $this->link( 'product', 'delete', null, array( 'id' => $entry->id ) );?>">Supprimer</a></td>
+	    </tr>
+<?php $i++; endforeach ?>
+	</tbody>
+</table>

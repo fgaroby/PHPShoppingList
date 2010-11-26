@@ -1,0 +1,36 @@
+<h1><?php echo $this->pageTitle; ?></h1>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nom</th>
+			<th>Poids</th>
+			<th>Catégorie</th>
+			<th colspan="2"></th>
+		</tr>
+	</thead>
+	<tbody>
+<?php
+if( $this->entries->getIterator()->next() ) :
+	$i = 0;
+	foreach( $this->entries as $entry ) :
+?>
+	    <tr class="<?php echo ( $i % 2 == 0 ? 'impair' : 'pair' ); ?>">
+	    	<td>
+	    		<a href="<?php echo $this->link( 'product', 'edit', null, array( 'id' => $entry->id ) ); ?>"><?php echo $this->escape( $entry->name ); ?></a>
+	    	</td>
+	    	<td><?php echo $this->escape( $entry->poids ); ?></td>
+	    	<td>
+	    		<a href="<?php echo $this->link( 'category', 'list', null, array( 'id' => $entry->xid ) );?>"><?php echo $this->escape( $entry->xcategory ); ?></a>
+	    	</td>
+	    </tr>
+<?php
+		$i++;
+	endforeach;
+else :
+?>
+		<tr>
+			<td colspan="5" class="nodata"><?php echo $this->translate( "No data" ); ?></td>
+		</tr>
+<?php endif;?>
+	</tbody>
+</table>

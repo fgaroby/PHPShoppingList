@@ -1,0 +1,27 @@
+<h1><?php echo $this->pageTitle; ?></h1>
+<?php
+foreach ($this->product as $product ) :
+?>
+	<div>
+		<p>
+			<span>Nom :</span>
+			<span><?php echo $product->name; ?></span>
+		</p>
+		<p>
+			<span>Catégorie :</span>
+			<span><?php echo $product->category; ?></span>
+		</p>
+		<p>
+			<span>Magasin :</span>
+			<span>
+				<select id="magasin">
+<?php
+			foreach( $this->magasins as $magasin ) :
+?>			
+				<option value="<?php echo $magasin->id; ?>"><?php echo $magasin->name; ?></option>
+<?php 		endforeach; ?>
+				</select>
+			</span>
+		</p>
+	</div>
+<?php endforeach; ?>

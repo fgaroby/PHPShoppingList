@@ -1,0 +1,50 @@
+<h1><?php echo $this->pageTitle; ?></h1>
+<?php 
+Zend_Debug::dump($this->entries );
+?>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nom</th>
+			<th>Poids</th>
+			<th>Unité</th>
+			<th colspan="2"></th>
+		</tr>
+	</thead>
+	<tbody>
+<?php
+if(  $this->entries->rowCount() ) :
+	$i = 0;
+	$lastCategory = null;
+	foreach( $this->entries as $entry ) :
+		if( $entry->xcategory != $lastCategory ) :
+?>
+		    <tr class="tr-separator">
+		    	<td colspan="2">
+		    		<img src="<?php echo $this->baseUrl(); ?>/images/list-add.png" alt="replier" onclick="toggleCategories( this );" name="<?php echo $entry->xcategory; ?>" />
+		    		<a href="<?php echo $this->link( 'category', 'list', null, array( 'id' => $entry->xcategory ) );?>"><?php echo $this->escape( $entry->category ); ?></a>
+		    	</td>
+		    	<td>&nbsp;</td>
+		    </tr>
+<?php
+			$lastCategory = $entry->xcategory;
+		endif;
+?>
+		<tr class="<?php echo ( $i % 2 == 0 ? 'impair' : 'pair' ); ?> cat_<?php echo $entry->xcategory; ?>">
+	    	<td>
+	    		<a href="<?php echo $this->link( 'product', 'consult', null, array( 'id' => $entry->id ) ); ?>"><?php echo $this->escape( $entry->name ); ?></a>
+	    	</td>
+	    	<td class="numeric"><?php echo $this->escape( $entry->poids ); ?></td>
+	    	<td><?php echo $entry->unit; ?></td>
+	    </tr>
+<?php
+		$i++;
+	endforeach;
+else :
+?>
+		<tr>
+			<td colspan="5" class="nodata"><?php echo $this->translate( "No data" ); ?></td>
+		</tr>
+<?php endif;?>
+	</tbody>
+</table>

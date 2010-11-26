@@ -1,0 +1,13 @@
+<?php if( isset( $this->submenu ) ) : ?>
+<script language="javascript"><!--
+	document.getElementById( 'submenu' ).style.display = 'block';
+// -->
+</script>
+<div id="submenu">
+	<ul>
+		<?php foreach ( $this->submenu as $link => $label ) : ?>
+		<li><a href="<?php echo $link; ?>"><?php echo $label; ?></a></li>
+		<?php endforeach; ?>
+	</ul>
+</div>
+<?php endif; ?>

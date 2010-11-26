@@ -1,0 +1,39 @@
+<html>
+	<?php echo $this->doctype( "XHTML1_TRANSITIONAL" ), PHP_EOL; ?>
+	<head>
+		<base href="http://<?php echo $_SERVER['SERVER_NAME'] . $this->baseUrl(); ?>/" />
+		<?php echo $this->headMeta()->setHttpEquiv( 'Content-type', 'text/html, charset=utf-8' )
+									->setHttpEquiv( 'Content-Style-type', 'text/css' )
+									->setHttpEquiv( 'lang', 'fr' )
+									->setHttpEquiv( 'imagetoolbar', 'no' )
+									->setName( 'author', 'Francescu GAROBY' )
+									->setName( 'generator', 'ZendFramework 1.10' )
+									->setName( 'language', 'fr' );
+									echo $this->headLink( array( 'rel' => 'favicon',
+																'type' => 'image/x-icon',
+																'href' => 'images/favicon.ico' ) );
+									echo $this->headTitle( $this->pageTitle );
+									/*echo $this->headLink()->setAlternate( $this->link( 'webservice', 'rss' ),
+																		'application/rss+xml',
+																		$this->translate( 'Votre liste de courses' ) );*/
+		?>
+		<script type="text/javascript" src="<?php echo $this->baseUrl();?>/js/jquery.js"></script>
+		<script type="text/javascript" src="<?php echo $this->baseUrl();?>/js/products.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="header">
+			<?php echo $this->partial( 'common/header.phtml', array( 'pageTitle' => $this->pageTitle ) ); ?>
+			</div>
+			<div id="submenu" style="display : none;">
+			<?php echo $this->layout()->submenu; ?>
+			</div>
+			<div id="page">
+			<?php echo $this->layout()->content; ?>
+			</div>
+			<div id="footer">
+			<?php echo $this->partial( 'common/footer.phtml' );?>
+			</div>
+		</div>
+	</body>
+</html>

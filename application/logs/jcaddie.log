@@ -1,0 +1,1363 @@
+127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T15:52:00+01:00 INFO (6): <pre>INSERT: Application_Model_DbTable_Category array(2) {
+  [&quot;id&quot;] =&gt; string(36) &quot;dcbb2036-e7dd-eb34-5431-da9500f4ba48&quot;
+  [&quot;name&quot;] =&gt; string(17) &quot;Fruits &amp; légumes&quot;
+}
+</pre>127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T15:52:00+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « id »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "ca...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "ca...', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('categories', Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#8 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(86): Zend_Db_Table_Row_Abstract->save()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « id »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "ca...', Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "ca...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('categories', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#7 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(86): Zend_Db_Table_Row_Abstract->save()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T15:52:21+01:00 INFO (6): <pre>INSERT: Application_Model_DbTable_Category array(2) {
+  [&quot;id&quot;] =&gt; string(36) &quot;e1857117-aa00-81e7-8c6f-fcc284c9658a&quot;
+  [&quot;name&quot;] =&gt; string(17) &quot;Fruits &amp; légumes&quot;
+}
+</pre>127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T15:52:21+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « id »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "ca...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "ca...', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('categories', Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#8 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(86): Zend_Db_Table_Row_Abstract->save()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « id »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "ca...', Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "ca...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('categories', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#7 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(86): Zend_Db_Table_Row_Abstract->save()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T16:02:44+01:00 INFO (6): <pre>INSERT: Application_Model_DbTable_Category array(2) {
+  [&quot;id&quot;] =&gt; string(36) &quot;9c375d95-aca0-1fac-54b8-646cbc2657fd&quot;
+  [&quot;name&quot;] =&gt; string(17) &quot;Fruits &amp; légumes&quot;
+}
+</pre>127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T16:02:44+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « id »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "ca...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "ca...', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('categories', Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#8 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(86): Zend_Db_Table_Row_Abstract->save()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « id »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "ca...', Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "ca...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('categories', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#7 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(86): Zend_Db_Table_Row_Abstract->save()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T16:03:30+01:00 INFO (6): <pre>INSERT: Application_Model_DbTable_Category array(2) {
+  [&quot;id&quot;] =&gt; string(36) &quot;5b932a1a-02fb-aa16-8997-5b4c75df5bfd&quot;
+  [&quot;name&quot;] =&gt; string(17) &quot;Fruits &amp; légumes&quot;
+}
+</pre>127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T16:03:30+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « id »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "ca...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "ca...', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('categories', Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#8 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(88): Zend_Db_Table_Row_Abstract->save()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « id »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "ca...', Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "ca...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('categories', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#7 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(88): Zend_Db_Table_Row_Abstract->save()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T16:06:47+01:00 NOTICE (5): exception 'Zend_Controller_Router_Exception' with message 'Route categories is not defined' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php:318
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php(464): Zend_Controller_Router_Rewrite->getRoute('categories')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Url.php(49): Zend_Controller_Router_Rewrite->assemble(Array, 'categories', false, true)
+#2 [internal function]: Zend_View_Helper_Url->url(Array, 'categories')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(342): call_user_func_array(Array, Array)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(103): Zend_View_Abstract->__call('url', Array)
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(103): Zend_View->url(Array, 'categories')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T16:09:49+01:00 NOTICE (5): exception 'Zend_Controller_Router_Exception' with message 'Route category is not defined' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php:318
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php(464): Zend_Controller_Router_Rewrite->getRoute('category')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Url.php(49): Zend_Controller_Router_Rewrite->assemble(Array, 'category', false, true)
+#2 [internal function]: Zend_View_Helper_Url->url(Array, 'category')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(342): call_user_func_array(Array, Array)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(103): Zend_View_Abstract->__call('url', Array)
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(103): Zend_View->url(Array, 'category')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T21:04:20+01:00 NOTICE (5): exception 'Zend_Controller_Router_Exception' with message 'Route category is not defined' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php:318
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php(464): Zend_Controller_Router_Rewrite->getRoute('category')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Url.php(49): Zend_Controller_Router_Rewrite->assemble(Array, 'category', false, true)
+#2 [internal function]: Zend_View_Helper_Url->url(Array, 'category')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(342): call_user_func_array(Array, Array)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(103): Zend_View_Abstract->__call('url', Array)
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(103): Zend_View->url(Array, 'category')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->editAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T21:10:55+01:00 NOTICE (5): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (public)' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#2 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T21:11:05+01:00 NOTICE (5): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (public)' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#2 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T21:11:20+01:00 NOTICE (5): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (public)' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#2 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T22:01:56+01:00 EMERG (0): exception 'Zend_Loader_PluginLoader_Exception' with message 'Plugin by name 'HeadStyleShet' was not found in the registry; used paths:
+Zend_View_Helper_: Zend/View/Helper/:/home/windu/workspace/JCaddie-web/application/views/helpers/' in /srv/http/ZendFramework-1.10.8/library/Zend/Loader/PluginLoader.php:412
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(1174): Zend_Loader_PluginLoader->load('HeadStyleShet')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(610): Zend_View_Abstract->_getPlugin('helper', 'headStyleShet')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(336): Zend_View_Abstract->getHelper('headStyleShet')
+#3 /home/windu/workspace/JCaddie-web/application/views/layouts/layout.phtml(16): Zend_View_Abstract->__call('headStyleShet', Array)
+#4 /home/windu/workspace/JCaddie-web/application/views/layouts/layout.phtml(16): Zend_View->headStyleShet()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Layout.php(796): Zend_View_Abstract->render('layout.phtml')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Layout/Controller/Plugin/Layout.php(143): Zend_Layout->render()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Plugin/Broker.php(331): Zend_Layout_Controller_Plugin_Layout->postDispatch(Object(Zend_Controller_Request_Http))
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T22:01:56+01:00 CRIT (2): exception 'Zend_Loader_PluginLoader_Exception' with message 'Plugin by name 'HeadStyleShet' was not found in the registry; used paths:
+Zend_View_Helper_: Zend/View/Helper/:/home/windu/workspace/JCaddie-web/application/views/helpers/' in /srv/http/ZendFramework-1.10.8/library/Zend/Loader/PluginLoader.php:412
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(1174): Zend_Loader_PluginLoader->load('HeadStyleShet')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(610): Zend_View_Abstract->_getPlugin('helper', 'headStyleShet')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(336): Zend_View_Abstract->getHelper('headStyleShet')
+#3 /home/windu/workspace/JCaddie-web/application/views/layouts/layout.phtml(16): Zend_View_Abstract->__call('headStyleShet', Array)
+#4 /home/windu/workspace/JCaddie-web/application/views/layouts/layout.phtml(16): Zend_View->headStyleShet()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Layout.php(796): Zend_View_Abstract->render('layout.phtml')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Layout/Controller/Plugin/Layout.php(143): Zend_Layout->render()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Plugin/Broker.php(331): Zend_Layout_Controller_Plugin_Layout->postDispatch(Object(Zend_Controller_Request_Http))
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T22:02:03+01:00 EMERG (0): exception 'Zend_Loader_PluginLoader_Exception' with message 'Plugin by name 'HeadStyleSheet' was not found in the registry; used paths:
+Zend_View_Helper_: Zend/View/Helper/:/home/windu/workspace/JCaddie-web/application/views/helpers/' in /srv/http/ZendFramework-1.10.8/library/Zend/Loader/PluginLoader.php:412
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(1174): Zend_Loader_PluginLoader->load('HeadStyleSheet')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(610): Zend_View_Abstract->_getPlugin('helper', 'headStyleSheet')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(336): Zend_View_Abstract->getHelper('headStyleSheet')
+#3 /home/windu/workspace/JCaddie-web/application/views/layouts/layout.phtml(16): Zend_View_Abstract->__call('headStyleSheet', Array)
+#4 /home/windu/workspace/JCaddie-web/application/views/layouts/layout.phtml(16): Zend_View->headStyleSheet()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Layout.php(796): Zend_View_Abstract->render('layout.phtml')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Layout/Controller/Plugin/Layout.php(143): Zend_Layout->render()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Plugin/Broker.php(331): Zend_Layout_Controller_Plugin_Layout->postDispatch(Object(Zend_Controller_Request_Http))
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T22:02:03+01:00 CRIT (2): exception 'Zend_Loader_PluginLoader_Exception' with message 'Plugin by name 'HeadStyleSheet' was not found in the registry; used paths:
+Zend_View_Helper_: Zend/View/Helper/:/home/windu/workspace/JCaddie-web/application/views/helpers/' in /srv/http/ZendFramework-1.10.8/library/Zend/Loader/PluginLoader.php:412
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(1174): Zend_Loader_PluginLoader->load('HeadStyleSheet')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(610): Zend_View_Abstract->_getPlugin('helper', 'headStyleSheet')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(336): Zend_View_Abstract->getHelper('headStyleSheet')
+#3 /home/windu/workspace/JCaddie-web/application/views/layouts/layout.phtml(16): Zend_View_Abstract->__call('headStyleSheet', Array)
+#4 /home/windu/workspace/JCaddie-web/application/views/layouts/layout.phtml(16): Zend_View->headStyleSheet()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Layout.php(796): Zend_View_Abstract->render('layout.phtml')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Layout/Controller/Plugin/Layout.php(143): Zend_Layout->render()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Plugin/Broker.php(331): Zend_Layout_Controller_Plugin_Layout->postDispatch(Object(Zend_Controller_Request_Http))
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T22:07:28+01:00 NOTICE (5): exception 'Zend_Controller_Router_Exception' with message 'Route category is not defined' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php:318
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php(464): Zend_Controller_Router_Rewrite->getRoute('category')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Url.php(49): Zend_Controller_Router_Rewrite->assemble(Array, 'category', false, true)
+#2 [internal function]: Zend_View_Helper_Url->url(Array, 'category')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(342): call_user_func_array(Array, Array)
+#4 /home/windu/workspace/JCaddie-web/application/views/scripts/category/index.phtml(16): Zend_View_Abstract->__call('url', Array)
+#5 /home/windu/workspace/JCaddie-web/application/views/scripts/category/index.phtml(16): Zend_View->url(Array, 'category')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('category/index....')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('category/index....', NULL)
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(212): Zend_Controller_Action_Helper_ViewRenderer->render(NULL, NULL, false)
+#11 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(44): Zend_Controller_Action->render()
+#12 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->indexAction()
+#13 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#14 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#15 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#16 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-14T22:18:34+01:00 NOTICE (5): exception 'Zend_Controller_Action_Exception' with message 'Action "delete" does not exist and was not trapped in __call()' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php:485
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(515): Zend_Controller_Action->__call('deleteAction', Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('deleteAction')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#4 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T07:27:23+01:00 EMERG (0): exception 'Zend_Validate_Exception' with message 'Internal error while using the pattern '[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}'' in /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php:111
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php(84): Zend_Validate_Regex->setPattern('[\w]{8}-[\w]{4}...')
+#1 /home/windu/workspace/JCaddie-web/library/Jcaddie/Form/Product.php(50): Zend_Validate_Regex->__construct('[\w]{8}-[\w]{4}...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Form.php(240): Jcaddie_Form_Product->init()
+#3 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(75): Zend_Form->__construct()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#8 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T07:27:45+01:00 EMERG (0): exception 'Zend_Validate_Exception' with message 'Internal error while using the pattern '[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}'' in /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php:111
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php(84): Zend_Validate_Regex->setPattern('[\w]{8}-[\w]{4}...')
+#1 /home/windu/workspace/JCaddie-web/library/Jcaddie/Form/Product.php(50): Zend_Validate_Regex->__construct('[\w]{8}-[\w]{4}...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Form.php(240): Jcaddie_Form_Product->init()
+#3 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(75): Zend_Form->__construct()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#8 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T07:27:46+01:00 EMERG (0): exception 'Zend_Validate_Exception' with message 'Internal error while using the pattern '[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}'' in /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php:111
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php(84): Zend_Validate_Regex->setPattern('[\w]{8}-[\w]{4}...')
+#1 /home/windu/workspace/JCaddie-web/library/Jcaddie/Form/Product.php(50): Zend_Validate_Regex->__construct('[\w]{8}-[\w]{4}...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Form.php(240): Jcaddie_Form_Product->init()
+#3 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(75): Zend_Form->__construct()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#8 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T07:27:50+01:00 EMERG (0): exception 'Zend_Validate_Exception' with message 'Internal error while using the pattern '[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}'' in /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php:111
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php(84): Zend_Validate_Regex->setPattern('[\w]{8}-[\w]{4}...')
+#1 /home/windu/workspace/JCaddie-web/library/Jcaddie/Form/Product.php(50): Zend_Validate_Regex->__construct('[\w]{8}-[\w]{4}...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Form.php(240): Jcaddie_Form_Product->init()
+#3 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(75): Zend_Form->__construct()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#8 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T07:27:53+01:00 EMERG (0): exception 'Zend_Validate_Exception' with message 'Internal error while using the pattern '[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}'' in /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php:111
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php(84): Zend_Validate_Regex->setPattern('[\w]{8}-[\w]{4}...')
+#1 /home/windu/workspace/JCaddie-web/library/Jcaddie/Form/Product.php(50): Zend_Validate_Regex->__construct('[\w]{8}-[\w]{4}...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Form.php(240): Jcaddie_Form_Product->init()
+#3 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(75): Zend_Form->__construct()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#8 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T07:27:59+01:00 EMERG (0): exception 'Zend_Validate_Exception' with message 'Internal error while using the pattern '[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}'' in /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php:111
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Validate/Regex.php(84): Zend_Validate_Regex->setPattern('[\w]{8}-[\w]{4}...')
+#1 /home/windu/workspace/JCaddie-web/library/Jcaddie/Form/Product.php(50): Zend_Validate_Regex->__construct('[\w]{8}-[\w]{4}...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Form.php(240): Jcaddie_Form_Product->init()
+#3 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(75): Zend_Form->__construct()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#8 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T21:05:05+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42P01]: Undefined table: 7 ERREUR:  la relation « products_id_seq » n'existe pas
+LINE 1: SELECT NEXTVAL('"products_id_seq"')
+                       ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT NEXTVAL(...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(799): Zend_Db_Adapter_Pdo_Abstract->query('SELECT NEXTVAL(...', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Pgsql.php(305): Zend_Db_Adapter_Abstract->fetchOne('SELECT NEXTVAL(...')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1037): Zend_Db_Adapter_Pdo_Pgsql->nextSequenceId('"products_id_se...')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#9 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(89): Zend_Db_Table_Row_Abstract->save()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#12 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#13 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42P01]: Undefined table: 7 ERREUR:  la relation « products_id_seq » n'existe pas
+LINE 1: SELECT NEXTVAL('"products_id_seq"')
+                       ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT NEXTVAL(...', Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(799): Zend_Db_Adapter_Pdo_Abstract->query('SELECT NEXTVAL(...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Pgsql.php(305): Zend_Db_Adapter_Abstract->fetchOne('SELECT NEXTVAL(...')
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1037): Zend_Db_Adapter_Pdo_Pgsql->nextSequenceId('"products_id_se...')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#8 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(89): Zend_Db_Table_Row_Abstract->save()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#13 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T21:05:28+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42601]: Syntax error: 7 ERREUR:  erreur de syntaxe sur ou près de « ) »
+LINE 1: INSERT INTO "products" () VALUES ()
+                                ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "pr...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "pr...', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('products', Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#8 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(89): Zend_Db_Table_Row_Abstract->save()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42601]: Syntax error: 7 ERREUR:  erreur de syntaxe sur ou près de « ) »
+LINE 1: INSERT INTO "products" () VALUES ()
+                                ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "pr...', Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "pr...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('products', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#7 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(89): Zend_Db_Table_Row_Abstract->save()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T21:06:08+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « name »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "pr...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "pr...', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('products', Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#8 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(94): Zend_Db_Table_Row_Abstract->save()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « name »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "pr...', Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "pr...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('products', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#7 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(94): Zend_Db_Table_Row_Abstract->save()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T21:07:05+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « poids »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "pr...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "pr...', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('products', Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#8 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(93): Zend_Db_Table_Row_Abstract->save()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « poids »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "pr...', Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "pr...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('products', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Zend_Db_Table_Abstract->insert(Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#7 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(93): Zend_Db_Table_Row_Abstract->save()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T21:08:08+01:00 NOTICE (5): exception 'Zend_Controller_Router_Exception' with message 'Route products is not defined' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php:318
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php(464): Zend_Controller_Router_Rewrite->getRoute('products')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Url.php(49): Zend_Controller_Router_Rewrite->assemble(Array, 'products', false, true)
+#2 [internal function]: Zend_View_Helper_Url->url(Array, 'products')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(342): call_user_func_array(Array, Array)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(107): Zend_View_Abstract->__call('url', Array)
+#5 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(107): Zend_View->url(Array, 'products')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T21:20:18+01:00 NOTICE (5): exception 'Zend_Controller_Router_Exception' with message 'Route product is not defined' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php:318
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php(464): Zend_Controller_Router_Rewrite->getRoute('product')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Url.php(49): Zend_Controller_Router_Rewrite->assemble(Array, 'product', false, true)
+#2 [internal function]: Zend_View_Helper_Url->url(Array, 'product')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(342): call_user_func_array(Array, Array)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(107): Zend_View_Abstract->__call('url', Array)
+#5 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(107): Zend_View->url(Array, 'product')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T21:31:17+01:00 NOTICE (5): exception 'Zend_Controller_Router_Exception' with message 'Route product is not defined' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php:318
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php(464): Zend_Controller_Router_Rewrite->getRoute('product')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Url.php(49): Zend_Controller_Router_Rewrite->assemble(Array, 'product', false, true)
+#2 [internal function]: Zend_View_Helper_Url->url(Array, 'product')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(342): call_user_func_array(Array, Array)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(107): Zend_View_Abstract->__call('url', Array)
+#5 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(107): Zend_View->url(Array, 'product')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T21:32:54+01:00 EMERG (0): exception 'Zend_Db_Table_Row_Exception' with message 'Specified column "category" is not in the row' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php:179
+Stack trace:
+#0 /home/windu/workspace/JCaddie-web/application/views/scripts/product/index.phtml(18): Zend_Db_Table_Row_Abstract->__get('category')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('product/index.p...')
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('product/index.p...', NULL)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(212): Zend_Controller_Action_Helper_ViewRenderer->render(NULL, NULL, false)
+#6 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(46): Zend_Controller_Action->render()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T21:44:39+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « id »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "pr...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "pr...', Array)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('products', Array)
+#6 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(25): Zend_Db_Table_Abstract->insert(Array)
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Application_Model_DbTable_Product->insert(Array)
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#9 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(90): Zend_Db_Table_Row_Abstract->save()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#12 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#13 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23502]: Not null violation: 7 ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « id »' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO "pr...', Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO "pr...', Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1052): Zend_Db_Adapter_Abstract->insert('products', Array)
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(25): Zend_Db_Table_Abstract->insert(Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(467): Application_Model_DbTable_Product->insert(Array)
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php(438): Zend_Db_Table_Row_Abstract->_doInsert()
+#8 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(90): Zend_Db_Table_Row_Abstract->save()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->editAction()
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#11 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#13 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:05:35+01:00 EMERG (0): exception 'Zend_Db_Table_Select_Exception' with message 'Select query cannot join with another table' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Select.php:215
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(456): Zend_Db_Table_Select->assemble()
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#4 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(48): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:23:19+01:00 EMERG (0): exception 'Zend_Db_Table_Select_Exception' with message 'Select query cannot join with another table' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Select.php:215
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(456): Zend_Db_Table_Select->assemble()
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#4 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(48): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:24:05+01:00 EMERG (0): exception 'Zend_Db_Table_Select_Exception' with message 'Select query cannot join with another table' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Select.php:215
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(456): Zend_Db_Table_Select->assemble()
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#4 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(48): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:24:35+01:00 EMERG (0): exception 'Zend_Db_Table_Select_Exception' with message 'Select query cannot join with another table' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Select.php:215
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(456): Zend_Db_Table_Select->assemble()
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#4 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(47): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:24:44+01:00 EMERG (0): exception 'Zend_Db_Table_Select_Exception' with message 'Select query cannot join with another table' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Select.php:215
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(456): Zend_Db_Table_Select->assemble()
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#4 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(48): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:29:34+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42702]: Ambiguous column: 7 ERREUR:  ORDER BY « name » est ambigu
+LINE 2: ...categories" AS "c" ON p.xcategory = c.id ORDER BY "name" ASC
+                                                             ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(39): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(44): Application_Model_DbTable_Product->fetchAllProducts()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42702]: Ambiguous column: 7 ERREUR:  ORDER BY « name » est ambigu
+LINE 2: ...categories" AS "c" ON p.xcategory = c.id ORDER BY "name" ASC
+                                                             ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(39): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(44): Application_Model_DbTable_Product->fetchAllProducts()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:30:08+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42702]: Ambiguous column: 7 ERREUR:  ORDER BY « name » est ambigu
+LINE 2: ...categories" AS "c" ON p.xcategory = c.id ORDER BY "name" ASC
+                                                             ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(40): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(44): Application_Model_DbTable_Product->fetchAllProducts()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42702]: Ambiguous column: 7 ERREUR:  ORDER BY « name » est ambigu
+LINE 2: ...categories" AS "c" ON p.xcategory = c.id ORDER BY "name" ASC
+                                                             ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(40): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(44): Application_Model_DbTable_Product->fetchAllProducts()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:40:58+01:00 EMERG (0): exception 'Zend_Db_Select_Exception' with message 'Unrecognized method 'getFetchMode()'' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php:1332
+Stack trace:
+#0 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(45): Zend_Db_Select->__call('getFetchMode', Array)
+#1 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(45): Zend_Db_Select->getFetchMode()
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#5 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#6 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:43:03+01:00 EMERG (0): exception 'Zend_Db_Select_Exception' with message 'Unrecognized method 'setFecthMode()'' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php:1332
+Stack trace:
+#0 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(35): Zend_Db_Select->__call('setFecthMode', Array)
+#1 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(35): Zend_Db_Select->setFecthMode(5)
+#2 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(44): Application_Model_DbTable_Product->fetchAllProducts()
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#7 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:43:14+01:00 EMERG (0): exception 'Zend_Db_Select_Exception' with message 'Unrecognized method 'setFetchMode()'' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php:1332
+Stack trace:
+#0 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(35): Zend_Db_Select->__call('setFetchMode', Array)
+#1 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(35): Zend_Db_Select->setFetchMode(5)
+#2 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(44): Application_Model_DbTable_Product->fetchAllProducts()
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#7 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:44:08+01:00 EMERG (0): exception 'Zend_Db_Select_Exception' with message 'Unrecognized method 'setFetchMode()'' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php:1332
+Stack trace:
+#0 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(35): Zend_Db_Select->__call('setFetchMode', Array)
+#1 /home/windu/workspace/JCaddie-web/application/models/DbTable/Product.php(35): Zend_Db_Select->setFetchMode(5)
+#2 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(44): Application_Model_DbTable_Product->fetchAllProducts()
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#7 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:53:00+01:00 NOTICE (5): exception 'Zend_Controller_Action_Exception' with message 'Action "list" does not exist and was not trapped in __call()' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php:485
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(515): Zend_Controller_Action->__call('listAction', Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('listAction')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#4 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T22:54:32+01:00 EMERG (0): exception 'Zend_View_Exception' with message 'script 'category/list.phtml' not found in path (/home/windu/workspace/JCaddie-web/application/views/scripts/)' in /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php:980
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(876): Zend_View_Abstract->_script('category/list.p...')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('category/list.p...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('category/list.p...', NULL)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('listAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T23:01:20+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42702]: Ambiguous column: 7 ERREUR:  la référence à la colonne « id » est ambigu
+LINE 2: ... "categories" AS "c" ON p.xcategory = c.id WHERE (id = '6578...
+                                                             ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Category.php(36): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(62): Application_Model_DbTable_Category->fetchAllProductsFromCategory('6578add4-667d-0...')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->listAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('listAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42702]: Ambiguous column: 7 ERREUR:  la référence à la colonne « id » est ambigu
+LINE 2: ... "categories" AS "c" ON p.xcategory = c.id WHERE (id = '6578...
+                                                             ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Category.php(36): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CategoryController.php(62): Application_Model_DbTable_Category->fetchAllProductsFromCategory('6578add4-667d-0...')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CategoryController->listAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('listAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-15T23:15:03+01:00 NOTICE (5): exception 'Zend_Controller_Action_Exception' with message 'Action "language" does not exist and was not trapped in __call()' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php:485
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(515): Zend_Controller_Action->__call('languageAction', Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('languageAction')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#4 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-16T07:30:43+01:00 NOTICE (5): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (enseigne)' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#2 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-16T07:33:10+01:00 NOTICE (5): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller class ("EnseigneController")' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php:352
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(262): Zend_Controller_Dispatcher_Standard->loadClass('EnseigneControl...')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#2 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#3 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-16T07:33:36+01:00 EMERG (0): exception 'Zend_View_Exception' with message 'script 'enseigne/index.phtml' not found in path (/home/windu/workspace/JCaddie-web/application/views/scripts/)' in /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php:980
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(876): Zend_View_Abstract->_script('enseigne/index....')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('enseigne/index....')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('enseigne/index....', NULL)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(212): Zend_Controller_Action_Helper_ViewRenderer->render(NULL, NULL, false)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/EnseigneController.php(44): Zend_Controller_Action->render()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): EnseigneController->indexAction()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-18T21:37:31+01:00 EMERG (0): exception 'Zend_View_Exception' with message 'script 'unit/index.phtml' not found in path (/home/windu/workspace/JCaddie-web/application/views/scripts/)' in /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php:980
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(876): Zend_View_Abstract->_script('unit/index.phtm...')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('unit/index.phtm...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('unit/index.phtm...', NULL)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(212): Zend_Controller_Action_Helper_ViewRenderer->render(NULL, NULL, false)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/UnitController.php(46): Zend_Controller_Action->render()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): UnitController->indexAction()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-18T21:40:07+01:00 NOTICE (5): exception 'Zend_Controller_Action_Exception' with message 'Action "edit" does not exist and was not trapped in __call()' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php:485
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(515): Zend_Controller_Action->__call('editAction', Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#4 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-18T21:51:22+01:00 EMERG (0): exception 'Zend_Form_Exception' with message 'Zend_Form_Element requires each element to have a name' in /srv/http/ZendFramework-1.10.8/library/Zend/Form/Element.php:260
+Stack trace:
+#0 /home/windu/workspace/JCaddie-web/library/Jcaddie/Form/Unit.php(28): Zend_Form_Element->__construct()
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Form.php(240): Jcaddie_Form_Unit->init()
+#2 /home/windu/workspace/JCaddie-web/application/controllers/UnitController.php(71): Zend_Form->__construct()
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): UnitController->editAction()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#7 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-18T21:53:48+01:00 NOTICE (5): exception 'Zend_Controller_Router_Exception' with message 'Route unit is not defined' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php:318
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php(464): Zend_Controller_Router_Rewrite->getRoute('unit')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Url.php(49): Zend_Controller_Router_Rewrite->assemble(Array, 'unit', false, true)
+#2 [internal function]: Zend_View_Helper_Url->url(Array, 'unit')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(342): call_user_func_array(Array, Array)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/UnitController.php(100): Zend_View_Abstract->__call('url', Array)
+#5 /home/windu/workspace/JCaddie-web/application/controllers/UnitController.php(100): Zend_View->url(Array, 'unit')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): UnitController->editAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-18T22:36:00+01:00 NOTICE (5): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (css)' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#2 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-18T22:36:14+01:00 NOTICE (5): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (css)' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#2 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-18T22:37:23+01:00 NOTICE (5): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (css)' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#2 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T22:12:18+01:00 NOTICE (5): exception 'Zend_Controller_Action_Exception' with message 'Action "index" does not exist and was not trapped in __call()' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php:485
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(515): Zend_Controller_Action->__call('indexAction', Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#4 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T22:17:53+01:00 NOTICE (5): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (caddie)' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#2 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T22:19:18+01:00 EMERG (0): exception 'Zend_View_Exception' with message 'script 'enseigne/edit.phtml' not found in path (/home/windu/workspace/JCaddie-web/application/views/scripts/)' in /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php:980
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(876): Zend_View_Abstract->_script('enseigne/edit.p...')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('enseigne/edit.p...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('enseigne/edit.p...', NULL)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T22:42:44+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[IM001]: Driver does not support this function: driver does not support multiple rowsets' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:378
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(378): PDOStatement->nextRowset()
+#1 /home/windu/workspace/JCaddie-web/application/views/scripts/product/index.phtml(12): Zend_Db_Statement_Pdo->nextRowset()
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('product/index.p...')
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('product/index.p...', NULL)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(212): Zend_Controller_Action_Helper_ViewRenderer->render(NULL, NULL, false)
+#7 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(46): Zend_Controller_Action->render()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[IM001]: Driver does not support this function: driver does not support multiple rowsets' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:381
+Stack trace:
+#0 /home/windu/workspace/JCaddie-web/application/views/scripts/product/index.phtml(12): Zend_Db_Statement_Pdo->nextRowset()
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('product/index.p...')
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('product/index.p...', NULL)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(212): Zend_Controller_Action_Helper_ViewRenderer->render(NULL, NULL, false)
+#6 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(46): Zend_Controller_Action->render()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:17:42+01:00 NOTICE (5): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (caddie)' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#2 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:24:24+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne p.xcategory n'existe pas
+LINE 2:  INNER JOIN "categories" AS "c" ON p.xcategory = c.id ORDER ...
+                                           ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(35): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne p.xcategory n'existe pas
+LINE 2:  INNER JOIN "categories" AS "c" ON p.xcategory = c.id ORDER ...
+                                           ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(35): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:28:47+01:00 EMERG (0): exception 'Zend_Db_Select_Exception' with message 'You cannot define a correlation name 'c' more than once' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php:808
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(336): Zend_Db_Select->_join('inner join', Array, 'p.xcategory = c...', Array, NULL)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(315): Zend_Db_Select->joinInner(Array, 'p.xcategory = c...', Array, NULL)
+#2 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(35): Zend_Db_Select->join(Array, 'p.xcategory = c...', Array)
+#3 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#8 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:29:04+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne cp.xcategory n'existe pas
+LINE 3:  INNER JOIN "products" AS "p" ON p.id = cp.xcategory
+                                                ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne cp.xcategory n'existe pas
+LINE 3:  INNER JOIN "products" AS "p" ON p.id = cp.xcategory
+                                                ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:29:16+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne cp.product n'existe pas
+LINE 3:  INNER JOIN "products" AS "p" ON p.id = cp.product
+                                                ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne cp.product n'existe pas
+LINE 3:  INNER JOIN "products" AS "p" ON p.id = cp.product
+                                                ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:29:25+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42P01]: Undefined table: 7 ERREUR:  la relation « category » n'existe pas
+LINE 4:  INNER JOIN "category" AS "cat" ON p.xcategory = cat.id ORDE...
+                    ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42P01]: Undefined table: 7 ERREUR:  la relation « category » n'existe pas
+LINE 4:  INNER JOIN "category" AS "cat" ON p.xcategory = cat.id ORDE...
+                    ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:30:04+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne cad.xcaddie n'existe pas
+LINE 1: SELECT "cad"."xcaddie" AS "id", "cad"."caddie" AS "name", "c...
+               ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne cad.xcaddie n'existe pas
+LINE 1: SELECT "cad"."xcaddie" AS "id", "cad"."caddie" AS "name", "c...
+               ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:30:23+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne cad.caddie n'existe pas
+LINE 1: SELECT "cad"."id" AS "xcaddie", "cad"."caddie" AS "name", "c...
+                                        ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne cad.caddie n'existe pas
+LINE 1: SELECT "cad"."id" AS "xcaddie", "cad"."caddie" AS "name", "c...
+                                        ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:30:37+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne p.xproduct n'existe pas
+LINE 1: ..." AS "xcaddie", "cad"."name" AS "caddie", "cp".*, "p"."xprod...
+                                                             ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne p.xproduct n'existe pas
+LINE 1: ..." AS "xcaddie", "cad"."name" AS "caddie", "cp".*, "p"."xprod...
+                                                             ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:30:53+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne cat.xcategory n'existe pas
+LINE 1: ... "p"."id" AS "xproduct", "p"."name" AS "product", "cat"."xca...
+                                                             ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#5 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#6 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERREUR:  la colonne cat.xcategory n'existe pas
+LINE 1: ... "p"."id" AS "xproduct", "p"."name" AS "product", "cat"."xca...
+                                                             ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Select.php(686): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Select))
+#4 /home/windu/workspace/JCaddie-web/application/models/DbTable/Caddie.php(37): Zend_Db_Select->query()
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(43): Application_Model_DbTable_Caddie->fetchAllProductsFromCaddie()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->indexAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:32:33+01:00 NOTICE (5): exception 'Zend_Controller_Action_Exception' with message 'Action "edit" does not exist and was not trapped in __call()' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php:485
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(515): Zend_Controller_Action->__call('editAction', Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#4 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:33:04+01:00 EMERG (0): exception 'Zend_View_Exception' with message 'script 'caddie/edit.phtml' not found in path (/home/windu/workspace/JCaddie-web/application/views/scripts/)' in /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php:980
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(876): Zend_View_Abstract->_script('caddie/edit.pht...')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('caddie/edit.pht...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('caddie/edit.pht...', NULL)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:55:58+01:00 EMERG (0): exception 'Zend_View_Exception' with message 'Method "prependScript" does not exist' in /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Placeholder/Container/Standalone.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/HeadLink.php(166): Zend_View_Helper_Placeholder_Container_Standalone->__call('prependScript', Array)
+#1 /home/windu/workspace/JCaddie-web/library/Jcaddie/Controller/Abstract.php(23): Zend_View_Helper_HeadLink->__call('prependScript', Array)
+#2 /home/windu/workspace/JCaddie-web/library/Jcaddie/Controller/Abstract.php(23): Zend_View_Helper_HeadLink->prependScript('script/jquery.j...')
+#3 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(25): Jcaddie_Controller_Abstract->init()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(133): ProductController->init()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(268): Zend_Controller_Action->__construct(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http), Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#8 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-19T23:58:26+01:00 EMERG (0): exception 'Zend_View_Exception' with message 'Method "appendFile" does not exist' in /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Placeholder/Container/Standalone.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/HeadLink.php(166): Zend_View_Helper_Placeholder_Container_Standalone->__call('appendFile', Array)
+#1 /home/windu/workspace/JCaddie-web/library/Jcaddie/Controller/Abstract.php(23): Zend_View_Helper_HeadLink->__call('appendFile', Array)
+#2 /home/windu/workspace/JCaddie-web/library/Jcaddie/Controller/Abstract.php(23): Zend_View_Helper_HeadLink->appendFile('script/jquery.j...')
+#3 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(25): Jcaddie_Controller_Abstract->init()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(133): ProductController->init()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(268): Zend_Controller_Action->__construct(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http), Array)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#8 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-22T22:30:33+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERREUR:  syntaxe invalide en entrée pour l'uuid : «  »
+LINE 1: SELECT "units".* FROM "units" WHERE ((("units"."id" = '')))
+                                                              ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1286): Zend_Db_Table_Abstract->fetchAll('(("units"."id" ...')
+#7 /home/windu/workspace/JCaddie-web/application/controllers/UnitController.php(58): Zend_Db_Table_Abstract->find('')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): UnitController->editAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERREUR:  syntaxe invalide en entrée pour l'uuid : «  »
+LINE 1: SELECT "units".* FROM "units" WHERE ((("units"."id" = '')))
+                                                              ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1286): Zend_Db_Table_Abstract->fetchAll('(("units"."id" ...')
+#6 /home/windu/workspace/JCaddie-web/application/controllers/UnitController.php(58): Zend_Db_Table_Abstract->find('')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): UnitController->editAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-22T22:42:13+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERREUR:  syntaxe invalide en entrée pour l'uuid : «  »
+LINE 1: SELECT "units".* FROM "units" WHERE ((("units"."id" = '')))
+                                                              ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1286): Zend_Db_Table_Abstract->fetchAll('(("units"."id" ...')
+#7 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(57): Zend_Db_Table_Abstract->find('')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->editAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERREUR:  syntaxe invalide en entrée pour l'uuid : «  »
+LINE 1: SELECT "units".* FROM "units" WHERE ((("units"."id" = '')))
+                                                              ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1286): Zend_Db_Table_Abstract->fetchAll('(("units"."id" ...')
+#6 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(57): Zend_Db_Table_Abstract->find('')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->editAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-22T22:42:57+01:00 NOTICE (5): exception 'Zend_Controller_Router_Exception' with message 'Route caddie is not defined' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php:318
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php(464): Zend_Controller_Router_Rewrite->getRoute('caddie')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Url.php(49): Zend_Controller_Router_Rewrite->assemble(Array, 'caddie', false, true)
+#2 [internal function]: Zend_View_Helper_Url->url(Array, 'caddie')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(342): call_user_func_array(Array, Array)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(100): Zend_View_Abstract->__call('url', Array)
+#5 /home/windu/workspace/JCaddie-web/application/controllers/CaddieController.php(100): Zend_View->url(Array, 'caddie')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): CaddieController->editAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-23T23:20:25+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERREUR:  syntaxe invalide en entrée pour l'uuid : «  »
+LINE 1: ...eignes".* FROM "enseignes" WHERE ((("enseignes"."id" = '')))
+                                                                  ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1286): Zend_Db_Table_Abstract->fetchAll('(("enseignes"."...')
+#7 /home/windu/workspace/JCaddie-web/application/controllers/EnseigneController.php(78): Zend_Db_Table_Abstract->find('')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): EnseigneController->editAction()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERREUR:  syntaxe invalide en entrée pour l'uuid : «  »
+LINE 1: ...eignes".* FROM "enseignes" WHERE ((("enseignes"."id" = '')))
+                                                                  ^' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement.php(320): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1505): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1321): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php(1286): Zend_Db_Table_Abstract->fetchAll('(("enseignes"."...')
+#6 /home/windu/workspace/JCaddie-web/application/controllers/EnseigneController.php(78): Zend_Db_Table_Abstract->find('')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): EnseigneController->editAction()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-23T23:21:06+01:00 NOTICE (5): exception 'Zend_Controller_Router_Exception' with message 'Route enseigne is not defined' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php:318
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Router/Rewrite.php(464): Zend_Controller_Router_Rewrite->getRoute('enseigne')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View/Helper/Url.php(49): Zend_Controller_Router_Rewrite->assemble(Array, 'enseigne', false, true)
+#2 [internal function]: Zend_View_Helper_Url->url(Array, 'enseigne')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(342): call_user_func_array(Array, Array)
+#4 /home/windu/workspace/JCaddie-web/application/controllers/EnseigneController.php(119): Zend_View_Abstract->__call('url', Array)
+#5 /home/windu/workspace/JCaddie-web/application/controllers/EnseigneController.php(119): Zend_View->url(Array, 'enseigne')
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): EnseigneController->editAction()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#10 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-23T23:25:38+01:00 NOTICE (5): exception 'Zend_Controller_Action_Exception' with message 'Action "consult" does not exist and was not trapped in __call()' in /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php:485
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(515): Zend_Controller_Action->__call('consultAction', Array)
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('consultAction')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#4 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-23T23:25:52+01:00 EMERG (0): exception 'Zend_View_Exception' with message 'script 'product/consult.phtml' not found in path (/home/windu/workspace/JCaddie-web/application/views/scripts/)' in /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php:980
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(876): Zend_View_Abstract->_script('product/consult...')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('product/consult...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('product/consult...', NULL)
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('consultAction')
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#9 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-23T23:29:15+01:00 EMERG (0): exception 'Zend_Db_Table_Row_Exception' with message 'Specified column "category" is not in the row' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Row/Abstract.php:179
+Stack trace:
+#0 /home/windu/workspace/JCaddie-web/application/views/scripts/product/consult.phtml(10): Zend_Db_Table_Row_Abstract->__get('category')
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('product/consult...')
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('product/consult...', NULL)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('consultAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-23T23:45:36+01:00 EMERG (0): exception 'PDOException' with message 'SQLSTATE[IM001]: Driver does not support this function: driver does not support multiple rowsets' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:378
+Stack trace:
+#0 /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php(378): PDOStatement->nextRowset()
+#1 /home/windu/workspace/JCaddie-web/application/views/scripts/product/consult.phtml(3): Zend_Db_Statement_Pdo->nextRowset()
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('product/consult...')
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('product/consult...', NULL)
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('consultAction')
+#10 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#12 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[IM001]: Driver does not support this function: driver does not support multiple rowsets' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Statement/Pdo.php:381
+Stack trace:
+#0 /home/windu/workspace/JCaddie-web/application/views/scripts/product/consult.phtml(3): Zend_Db_Statement_Pdo->nextRowset()
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/View.php(108): include('/home/windu/wor...')
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/View/Abstract.php(880): Zend_View->_run('/home/windu/wor...')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('product/consult...')
+#4 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('product/consult...', NULL)
+#5 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#6 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#7 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#8 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('consultAction')
+#9 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#11 {main}127.0.0.1 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.122010-11-24T07:38:42+01:00 EMERG (0): exception 'Zend_Db_Table_Exception' with message 'Too few columns for the primary key' in /srv/http/ZendFramework-1.10.8/library/Zend/Db/Table/Abstract.php:1225
+Stack trace:
+#0 /home/windu/workspace/JCaddie-web/application/controllers/ProductController.php(127): Zend_Db_Table_Abstract->find()
+#1 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Action.php(513): ProductController->consultAction()
+#2 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('consultAction')
+#3 /srv/http/ZendFramework-1.10.8/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#4 /home/windu/workspace/JCaddie-web/public/index.php(272): Zend_Controller_Front->dispatch()
+#5 {main}

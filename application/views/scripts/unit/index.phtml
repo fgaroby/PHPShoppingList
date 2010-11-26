@@ -1,0 +1,32 @@
+<h1><?php echo $this->pageTitle; ?></h1>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nom</th>
+			<th>Unité</th>
+		</tr>
+	</thead>
+	<tbody>
+<?php
+if( $this->entries->count() > 0 ) :
+	$i = 0;
+	foreach( $this->entries as $entry ) :
+//Zend_Debug::dump( $entry );
+?>
+		<tr class="<?php echo ( $i % 2 == 0 ? 'impair' : 'pair' ); ?>">
+			<td>
+				<a href="<?php echo $this->link( 'unit', 'edit', null, array( 'id' => $entry->id ) ); ?>"><?php echo $this->escape( $entry->name ); ?></a>
+			</td>
+			<td><?php echo $this->escape( $entry->unit ); ?></td>
+		</tr>
+<?php
+		$i++;
+	endforeach;
+else :
+?>
+		<tr>
+			<td colspan="3" class="nodata"><?php echo $this->translate( "No data" ); ?></td>
+		</tr>
+<?php endif;?>
+	</tbody>
+</table>

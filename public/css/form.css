@@ -1,0 +1,43 @@
+/* Zend Form Styling */
+dl dt,dd {
+	min-height: 30px;
+}
+
+dl dt {
+	float: left;
+	clear: left;
+	text-align: right;
+	width : 10%;
+	padding-right : 0px;
+	margin-right : 0px;
+}
+
+.required {
+	font-weight: 600;
+}
+
+dl dd {
+	float: left;
+	clear: right;
+	padding-left: 5px;
+	margin-left : 0px;	
+	width : 25%;
+}
+
+ul.errors {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.errors li {
+	float: left;
+	margin: 0 0.15em;
+	font-size: 12px;
+	color: red;
+	clear: both;
+}
+
+form {
+	clear: both;
+}
